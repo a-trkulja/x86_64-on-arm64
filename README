@@ -1,0 +1,6 @@
+sudo docker login --username atrkulja
+sudo docker build -t atrkulja/x86_64-on-arm64 .
+sudo docker push atrkulja/x86_64-on-arm64
+
+# For debug
+sudo docker build --progress=plain --no-cache -t atrkulja/x86_64-on-arm64 .
